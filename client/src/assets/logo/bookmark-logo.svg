@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="145px" viewBox="0 0 500 145" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="AlegreyaSansSC-Black, Alegreya Sans SC" font-size="88" font-weight="700" fill="#000000">
+            <tspan x="8" y="107">BOOK</tspan>
+        </text>
+        <filter x="-1.8%" y="-2.4%" width="104.4%" height="109.5%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="5" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <text id="text-3" font-family="YesevaOne-Regular, Yeseva One" font-size="82" font-weight="normal" fill="#000000">
+            <tspan x="241" y="107">MARK</tspan>
+        </text>
+        <filter x="-2.0%" y="-3.2%" width="104.0%" height="112.6%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="4" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="BOOK" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+            <use xlink:href="#text-1"></use>
+        </g>
+        <g id="212-bookmarks" transform="translate(259.000000, 66.500000) rotate(1.000000) translate(-259.000000, -66.500000) translate(233.000000, 32.000000)" fill="#B05A5A" fill-rule="nonzero">
+            <path d="M8.66666667,8.625 L8.66666667,69 L30.3333333,47.4375 L52,69 L52,8.625 L8.66666667,8.625 Z M43.3333333,0 L0,0 L0,60.375 L4.33333333,56.0625 L4.33333333,4.3125 L43.3333333,4.3125 L43.3333333,0 Z" id="Shape"></path>
+        </g>
+        <g id="MARK" fill="#000000" fill-opacity="1">
+            <use filter="url(#filter-4)" xlink:href="#text-3"></use>
+            <use xlink:href="#text-3"></use>
+        </g>
+    </g>
+</svg>
