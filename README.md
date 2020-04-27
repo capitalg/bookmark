@@ -24,4 +24,9 @@ I'll probably also play around with complete offline mode, background sync jobs,
 
 ## Getting Started
 
-TODO
+### Client
+
+`cd client/ && npm start`
+
+### Server
+`cd server/ && docker-compose up`
