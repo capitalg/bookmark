@@ -1,24 +1,21 @@
-const app = require('express')()
-const graphqlHTTP = require('express-graphql')
-const mongoose = require('mongoose')
-const schema = require('./schema/schema')
-const { MONGODB_CXN_URL } = require('./config')
+const { ApolloServer } = require('apollo-server')
+const { ApolloGateway } = require('@apollo/gateway')
+const {
+  BOOKS_SERVICE_NAME,
+  BOOKS_SERVICE_ENDPOINT,
+} = require('./config')
 
-app.use(require('cors')())
-
-mongoose.connect(MONGODB_CXN_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
+const gateway = new ApolloGateway({
+  serviceList: [
+    { name: BOOKS_SERVICE_NAME, url: BOOKS_SERVICE_ENDPOINT },
+  ],
 })
-mongoose.connection.once('open', () => {
-  console.log('Connected to MongoDB')
-});
 
-app.use('/graphql', graphqlHTTP({
-  schema,
-  graphiql: true
-}))
+const server = new ApolloServer({
+  gateway,
+  subscriptions: false,
+})
 
-app.listen(4000, () => {
-  console.log('Listening on port 4000...')
+server.listen(4000).then(({ url }) => {
+  console.log(`🚀  Server ready at ${url}`)
 })
